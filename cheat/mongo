@@ -1,0 +1,2 @@
+# NowSecure Mobile: find newest device in Mongo
+db.device.find().sort({_id: -1}).limit(1).pretty();

@@ -1,0 +1,46 @@
+# misc system
+alias cb='xclip -selection clipboard'
+alias l='ls'
+alias la='ls -A'
+alias ll='ls -Al'
+alias q='exit'
+alias vim=nvim
+alias z='cd'
+
+# shotcuts
+alias ......="cd ../../../../..;"
+alias .....="cd ../../../..;"
+alias ....="cd ../../..;"
+alias ...="cd ../..;"
+alias ..="cd ..;"
+alias d='cd ~/desktop'
+alias src='cd ~/src'
+
+# git
+alias gb='git branch'
+alias gc='git clone'
+alias gd='git diff'
+alias gp='git push'
+alias gs='git status'
+
+# vagrant
+alias vh='vagrant halt'
+alias vs='vagrant ssh'
+alias vu='vagrant up'
+
+# ad-hoc webserver
+alias ws='python -m SimpleHTTPServer'
+
+# exports
+# NB: I know it's "wrong" to put this here instead of in .bashrc, but it's more
+# convient to manage one file instead of two.
+
+# set the editor
+export EDITOR=nvim
+
+# lie about the terminal for the sake of compatibility. Some programs seem not
+# to properly support suckless-st otherwise.
+export TERM=xterm
+
+# set the DFEAULT_CHEAT_DIR to the cheatsheets in my dotfiles directory
+export DEFAULT_CHEAT_DIR=~/src/dotfiles/cheat

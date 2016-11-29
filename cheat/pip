@@ -1,0 +1,2 @@
+# To upgrade a package
+sudo pip install <package-name> --upgrade

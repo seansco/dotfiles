@@ -1,0 +1,10 @@
+# to set a custom registry:
+npm config set registry https://viaforensics.registry.nodejitsu.com
+
+# to log in
+npm login --registry https://registry.nodejitsu.com
+
+# To publish a module to the registry, you'll first want to change directory
+# into the modules directory. Then run:
+
+npm publish --registry https://viaforensics.registry.nodejitsu.com

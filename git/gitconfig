@@ -1,0 +1,15 @@
+[user]
+  name  = Chris Lane
+  email = chris@chris-allen-lane.com
+
+[color]
+  ui = true
+
+[alias]
+  co = checkout
+
+[push]
+  default = tracking
+
+[core]
+  editor = nvim

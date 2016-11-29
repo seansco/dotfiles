@@ -1,0 +1,5 @@
+# The following are ports I care about:
+tor-op   : 9001
+tor-dir  : 9030
+bitcoin  : 8333
+litecoin : 9333

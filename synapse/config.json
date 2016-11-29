@@ -1,0 +1,24 @@
+{
+  "ui" : {
+    "global" : {
+      "ui-type" : "virgilio",
+      "show-indicator" : false
+    }
+  },
+  "data-sink" : {
+    "global" : {
+      "disabled-plugins" : [
+        "SynapseChatActions",
+        "SynapseFileOpPlugin",
+        "SynapseLaunchpadPlugin",
+        "SynapsePidginPlugin",
+        "SynapseOpenSearchPlugin",
+        "SynapseSshPlugin",
+        "SynapseSelectionPlugin",
+        "SynapsePastebinPlugin",
+        "SynapseZeitgeistRelated",
+        "SynapseHybridSearchPlugin"
+      ]
+    }
+  }
+}

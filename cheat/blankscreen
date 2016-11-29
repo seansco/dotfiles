@@ -1,0 +1,7 @@
+# To prevent the screen from sleeping in Debian:
+xset s off         # don't activate screensaver
+xset -dpms         # disable DPMS (Energy Star) features.
+xset s noblank     # don't blank the video device
+
+# See:
+http://raspberrypi.stackexchange.com/questions/752/how-do-i-prevent-the-screen-from-going-blan

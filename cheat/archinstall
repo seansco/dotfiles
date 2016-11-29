@@ -1,0 +1,19 @@
+# Beginners Guide
+# https://wiki.archlinux.org/index.php/Beginners%27_guide
+
+# Helpful LifeHacker article:
+# http://lifehacker.com/5680453/build-a-killer-customized-arch-linux-installation-and-learn-all-about-linux-in-the-process
+
+# Article on FDE with Luks
+# http://www.brandonkester.com/tech/2014/03/16/full-disk-encryption-in-arch-linux-with-uefi.html
+
+# SO on partitioning:
+# https://superuser.com/questions/592109/archlinuxs-partition-suggestions
+
+# LUKS on LVM
+# https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system#LUKS_on_LVM
+
+## Configure Partitions ##
+
+# select a mirror
+echo 'Server = http://www.gtlib.gatech.edu/pub/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
