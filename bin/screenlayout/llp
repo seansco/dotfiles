@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# landscape / landscape / portrait
+
+xrandr \
+  --output DVI-D-0 --mode 1920x1080 --pos 72x1816   --rotate normal \
+  --output HDMI-0  --mode 1920x1080 --pos 1992x1816 --rotate normal \
+  --output DVI-I-1 --mode 1920x1080 --pos 3912x1816 --rotate right  \
+  --output DP-0    --mode 1920x1080 --pos 1992x736  --rotate inverted --primary \
+  --output DVI-I-0 --off \
+  --output DP-1    --off
