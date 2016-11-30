@@ -1,19 +1,22 @@
-# misc system
+# misc
 alias cb='xclip -selection clipboard'
+alias df='cd ~/src/dotfiles; nvim; cd -'
 alias f='fg'
 alias l='ls'
 alias la='ls -A'
 alias ll='ls -Al'
 alias q='exit'
+alias ra='source ~/.bash_aliases'
+alias v=nvim
 alias vim=nvim
 alias z='cd'
 
 # shotcuts
-alias ......="cd ../../../../..;"
-alias .....="cd ../../../..;"
-alias ....="cd ../../..;"
-alias ...="cd ../..;"
-alias ..="cd ..;"
+alias ......='cd ../../../../..;'
+alias .....='cd ../../../..;'
+alias ....='cd ../../..;'
+alias ...='cd ../..;'
+alias ..='cd ..;'
 alias d='cd ~/desktop'
 alias o='cd ~/downloads'
 alias s='cd ~/src'
@@ -23,9 +26,10 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
 alias gc='git commit'
+alias gcl='git clone'
 alias gcm='git commit -m'
 alias gd='git diff'
-alias gl='git clone'
+alias gl='git log'
 alias gp='git push'
 alias gs='git status'
 
