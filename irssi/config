@@ -261,6 +261,7 @@ settings = {
   core = {
     real_name = "Chris Allen Lane";
     user_name = "mudbound_dragon";
+    nick = "mudbound_dragon";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 
@@ -271,9 +272,6 @@ settings = {
   };
 
   hilights = (
-    {
-      text  = "REDACTED"; color = "%M"; nick  = "yes";
-      word  = "yes";
-    }
+    { text = "REDACTED"; color = "%M"; nick = "yes"; word = "yes"; }
   );
 };
