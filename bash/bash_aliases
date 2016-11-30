@@ -15,6 +15,7 @@ alias ....="cd ../../..;"
 alias ...="cd ../..;"
 alias ..="cd ..;"
 alias d='cd ~/desktop'
+alias o='cd ~/downloads'
 alias s='cd ~/src'
 
 # git
