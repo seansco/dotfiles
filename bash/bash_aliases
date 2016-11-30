@@ -1,5 +1,6 @@
 # misc system
 alias cb='xclip -selection clipboard'
+alias f='fg'
 alias l='ls'
 alias la='ls -A'
 alias ll='ls -Al'
@@ -18,8 +19,9 @@ alias s='cd ~/src'
 
 # git
 alias gb='git branch'
-alias gc='git clone'
+alias gc='git commit'
 alias gd='git diff'
+alias gl='git clone'
 alias gp='git push'
 alias gs='git status'
 
