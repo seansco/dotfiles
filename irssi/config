@@ -261,7 +261,6 @@ settings = {
   core = {
     real_name = "Chris Allen Lane";
     user_name = "mudbound_dragon";
-    #nick = "REDACTED";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 
