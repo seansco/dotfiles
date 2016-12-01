@@ -1,6 +1,7 @@
 [user]
-  name  = Chris Lane
-  email = chris@chris-allen-lane.com
+  name       = Chris Lane
+  email      = chris@chris-allen-lane.com
+  signingkey = 7B55E9E4C286BA99AA991997BC3A2A5988351AF4
 
 [color]
   ui = true
