@@ -11,6 +11,7 @@ dotfiles
 | `git/gitconfig`         | `~/.gitconfig`                   |
 | `gtk/gtk-3.0`           | `~/.config/gtk-3.0`              |
 | `gtk/gtkrc-2.0`         | `~/.gtkrc-2.0`                   |
+| `irssi`                 | `~/.irssi`                       |
 | `nvidia/blacklist.conf` | `/etc/modprobe.d/blacklist.conf` <sup>1</sup> |
 | `synapse`               | `~/.config/synapse`              |
 | `vim/init.vim`          | `~/.config/nvim/init.vim`        |
