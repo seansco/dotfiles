@@ -36,10 +36,10 @@ local exports = {
     properties = { floating = true },
   },
 
-  -- always place Pavucontrol on tag 5 of screen 1
+  -- always place Pavucontrol on tag 6 of screen 1
   {
     rule       = { class = 'Pavucontrol' },
-    properties = { tag   = tags[1][5] },
+    properties = { tag   = tags[1][6] },
   },
 
   {
