@@ -2,7 +2,7 @@
 pass init <gpg-id>
 
 # To generate a secure password:
-TODO
+pass generate <pass-name> <length>
 
 # To insert a password:
 pass insert <pass-name>
