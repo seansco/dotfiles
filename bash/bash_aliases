@@ -1,6 +1,6 @@
 # misc
 alias cb='xclip -selection clipboard'
-alias df='cd ~/src/dotfiles; nvim; cd -'
+alias dots='cd ~/src/dotfiles; nvim; cd -'
 alias f='fg'
 alias l='ls'
 alias la='ls -A'
