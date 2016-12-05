@@ -8,6 +8,7 @@ dotfiles
 | `bash/bash_aliases`     | `~/.bash_aliases`                |
 | `bash/dircolors`        | `~/.dircolors`                   |
 | `clinc/clincrc`         | `~/.clincrc`                     |
+| `fonts`                 | `~/.fonts`                       |
 | `git/gitconfig`         | `~/.gitconfig`                   |
 | `gtk/gtk-3.0`           | `~/.config/gtk-3.0`              |
 | `gtk/gtkrc-2.0`         | `~/.gtkrc-2.0`                   |
