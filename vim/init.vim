@@ -35,7 +35,6 @@ set bg=dark
 :imap JK <Esc>
 :imap kj <Esc>
 :imap KJ <Esc>
-:imap <C-BS> <C-W>
 
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
