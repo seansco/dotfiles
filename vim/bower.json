@@ -1,0 +1,26 @@
+{
+  "name": "nvim",
+  "authors": [
+    "Chris Lane <chris@chris-allen-lane.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "easymotion"           : "easymotion/vim-easymotion",
+    "tabular"              : "godlygeek/tabular",
+    "vim-colors-solarized" : "altercation/vim-colors-solarized",
+    "nerdcommenter"        : "scrooloose/nerdcommenter",
+    "nerdtree"             : "scrooloose/nerdtree",
+    "lightline"            : "itchyny/lightline.vim",
+    "vim-surround"         : "tpope/vim-surround"
+  }
+}

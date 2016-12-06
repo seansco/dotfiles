@@ -19,7 +19,7 @@ set tabstop=2         " an indentation every four columns
 filetype plugin indent on
 
 " load plugins
-set rtp+=~/.config/nvim/bundle/*/
+"set rtp+=~/.config/nvim/bundle/*/ " <-- the Vim 7 way
 
 " ---- Aesthetic -----
 highlight ColorColumn ctermbg = 4
