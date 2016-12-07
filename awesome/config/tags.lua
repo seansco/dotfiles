@@ -1,4 +1,4 @@
-local exports  = {}
+local exports = {}
 
 -- return the tag set that's appropriate for the screen count
 if screen.count() == 4 then
