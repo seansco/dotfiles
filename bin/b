@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# sets screen brightness
+# NB: input should be decimals, between 0.0 and 1.0
+xrandr --output eDP-1 --brightness $1
