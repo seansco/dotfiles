@@ -1,0 +1,2 @@
+# To change the screen brightness:
+xrandr --output eDP-1 --brightness 0.5
