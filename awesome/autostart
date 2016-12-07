@@ -31,6 +31,11 @@ if [ "$HOSTNAME" = fourside ]; then
     --output DP-1    --off
 fi
 
+# twoson HiDPI kludge
+if [ "$HOSTNAME" = twoson ]; then
+  xrandr --output eDP-1 --scale 0.5x0.5
+fi
+
 # compositor
 compton -b
 
