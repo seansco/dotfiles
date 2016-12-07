@@ -11,21 +11,25 @@ touch '/tmp/.awm-started'
 # turn on num-lock
 numlockx
 
-# quad monitors
-# Kludge: the `--primary` flag is important, because it tricks xrandr into
-# outputting the monitor order in a configuration that happens to be useful to
-# me. This is important, because otherwise, the mechanism to cycle among screen
-# within AWM will not behave as expected.
-#
-# See:
-# https://github.com/awesomeWM/awesome/issues/1122
-xrandr \
-  --output DVI-D-0 --mode 1920x1080 --pos 0x1080     --rotate left \
-  --output HDMI-0  --mode 1920x1080 --pos 1080x1080  --rotate normal\
-  --output DVI-I-1 --mode 1920x1080 --pos 3000x1080  --rotate right \
-  --output DP-0    --mode 1920x1080 --pos 1080x0     --rotate inverted --primary\
-  --output DVI-I-0 --off \
-  --output DP-1    --off
+# use xrandr to configure quad monitors on fourside only
+HOSTNAME=`hostname`
+if [ "$HOSTNAME" = fourside ]; then
+  # quad monitors
+  # Kludge: the `--primary` flag is important, because it tricks xrandr into
+  # outputting the monitor order in a configuration that happens to be useful
+  # to me. This is important, because otherwise, the mechanism to cycle among
+  # screen within AWM will not behave as expected.
+  #
+  # See:
+  # https://github.com/awesomeWM/awesome/issues/1122
+  xrandr \
+    --output DVI-D-0 --mode 1920x1080 --pos 0x1080     --rotate left   \
+    --output HDMI-0  --mode 1920x1080 --pos 1080x1080  --rotate normal \
+    --output DVI-I-1 --mode 1920x1080 --pos 3000x1080  --rotate right  \
+    --output DP-0    --mode 1920x1080 --pos 1080x0     --rotate inverted --primary \
+    --output DVI-I-0 --off \
+    --output DP-1    --off
+fi
 
 # compositor
 compton -b
