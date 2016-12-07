@@ -17,7 +17,7 @@ exports[1] = awful.tag(
     '10.mai  ',
     '11.etc  ',
     '12.vol',
-  }, 4, layouts[1]
+  }, 1, layouts[1]
 )
 
 return exports
