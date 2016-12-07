@@ -1,6 +1,3 @@
-local awful   = require('awful')
-require('awful.autofocus')
-local layouts = require('config/layouts')
 local exports  = {}
 
 -- return the tag set that's appropriate for the screen count
