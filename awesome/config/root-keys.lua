@@ -68,8 +68,8 @@ local exports = awful.util.table.join(
   --end),
 
   -- { restart, quit } awesome
-  awful.key({ config.modkey, 'Control' }, 'r', awesome.restart),
-  awful.key({ config.modkey, 'Shift'   }, 'q', awesome.quit),
+  --awful.key({ config.modkey, 'Control' }, 'r', awesome.restart),
+  --awful.key({ config.modkey, 'Shift'   }, 'q', awesome.quit),
 
   -- spawn a shell
   awful.key({ config.modkey }, 'Return', function ()
