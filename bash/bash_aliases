@@ -9,6 +9,7 @@ alias q='exit'
 alias ra='source ~/.bash_aliases'
 alias v=nvim
 alias vim=nvim
+alias wireless='nmtui'
 alias z='cd'
 
 # shotcuts
