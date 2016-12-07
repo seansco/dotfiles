@@ -3,14 +3,9 @@
 # store the cwd
 TMPCWD=`pwd`
 
-# iterate over each vim plugin
-for dir in ~/.config/nvim/bundle/*
-do
-  echo "Updating $dir"
-  cd $dir
-  git fetch origin
-  git rebase origin/master
-done
+# update the plugins with bower
+cd ~/.config/nvim
+bower update
 
 # return to the original cwd
 cd $TMPCWD
