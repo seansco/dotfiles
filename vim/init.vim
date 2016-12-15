@@ -74,7 +74,6 @@ vnoremap <silent> <leader>s :sort<CR>
 " specify custom file types
 au BufNewFile,BufRead *.ejs    set filetype=html
 au BufNewFile,BufRead *.hogan  set filetype=html
-au BufNewFile,BufRead *.json   set filetype=javascript
 au BufNewFile,BufRead *.md     set filetype=markdown
 
 " apply 4 space indents to certain filetypes
