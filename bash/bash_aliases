@@ -2,6 +2,7 @@
 alias cb='xclip -selection clipboard'
 alias dots='cd ~/src/dotfiles; nvim; cd -'
 alias f='fg'
+alias jse='nvim -'
 alias l='ls'
 alias la='ls -A'
 alias ll='ls -Al'
