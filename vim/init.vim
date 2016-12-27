@@ -78,6 +78,7 @@ vnoremap <silent> <leader>s :sort<CR>
 au BufNewFile,BufRead *.ejs    set filetype=html
 au BufNewFile,BufRead *.hogan  set filetype=html
 au BufNewFile,BufRead *.md     set filetype=markdown
+au BufNewFile,BufRead *.vue    set filetype=html
 
 " apply 4 space indents to certain filetypes
 autocmd FileType php setlocal shiftwidth=4 tabstop=4
