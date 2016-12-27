@@ -21,10 +21,13 @@ filetype plugin indent on
 " load plugins
 "set rtp+=~/.config/nvim/bundle/*/ " <-- the Vim 7 way
 
-" ---- Aesthetic -----
+" ----- Aesthetic -----
 highlight ColorColumn ctermbg = 4
 highlight CursorLine ctermbg  = 0
+
+" ----- vars -----
 let mapleader                 = ","
+let NERDTreeIgnore            = [ 'node_modules' ]
 
 set bg=dark
 :colorscheme solarized
