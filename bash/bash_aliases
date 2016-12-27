@@ -6,6 +6,7 @@ alias je='nvim -c "set syntax=json" -'
 alias l='ls'
 alias la='ls -A'
 alias ll='ls -Al'
+alias ls='ls --group-directories-first --color=auto'
 alias q='exit'
 alias ra='source ~/.bash_aliases'
 alias v=nvim
