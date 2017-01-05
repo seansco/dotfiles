@@ -1,6 +1,17 @@
 #!/bin/bash
 
+# update system packages
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoclean
 sudo apt-get autoremove
+
+# store the cwd
+TMPCWD=`pwd`
+
+# update the plugins with bower
+cd ~/.config/nvim
+bower update
+
+# return to the original cwd
+cd $TMPCWD
