@@ -72,6 +72,12 @@ vnoremap <silent> <leader>a :Tab /=<CR>
 vnoremap <silent> <leader>o :Tab /:<CR> 
 vnoremap <silent> <leader>s :sort<CR> 
 
+" snipmate
+:imap <Tab> <Plug>snipMateNextOrTrigger
+:smap <Tab> <Plug>snipMateNextOrTrigger
+:imap <S-Tab> <Plug>snipMateBack
+:smap <S-Tab> <Plug>snipMateBack
+
 
 " ----- Filetype-specific -----
 " specify custom file types
