@@ -1,0 +1,62 @@
+# html5 document skeleton
+snippet skeleton
+	<!doctype html>
+	<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>${1}</title>
+		${2}
+	</head>
+	<body>
+	${3}
+	</body>
+	</html>
+
+# attributes
+snippet .
+	class='${1}'
+
+snippet n
+	name='${1}'
+
+snippet r
+	rel='${1}'
+
+snippet t
+	title='${1}'
+
+snippet id
+	id='${1}'
+
+snippet idn
+	id='${1}' name='${0:$1}'
+
+# elements
+snippet a
+	<a href='${1}'>${2}</a>
+
+snippet br
+	<br>
+
+snippet css
+	<link rel='stylesheet' href='${1:style.css}' type='text/css' media='${2:all}'>
+
+snippet form
+	<form method='${1:post/get}' action='${2}'>
+				${3}
+	</form>
+
+snippet img
+	<img src='${1}' alt='${2}'>
+
+snippet input
+	<input type='${1:text}' value='${2}'>
+
+snippet script
+	<script src='${1}' type='text/javascript'></script>
+
+snippet submit
+	<input type='submit' value='${2}' ${3}>
+
+snippet textarea
+	<textarea name='${1}'>${2}</textarea>

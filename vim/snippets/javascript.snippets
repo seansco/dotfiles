@@ -1,0 +1,139 @@
+###################
+# Control Flow
+###################
+snippet if
+	if (${1:true}) {
+		${0}
+	}
+
+snippet ifelse
+	if (${1:true}) {
+		${2}
+	} else {
+		${0}
+	}
+
+snippet tern
+	${1:/* condition */} ? ${2:a} : ${0:b}
+
+snippet terntree
+	const ${1} = 
+		(${2:true}) ? ${3:'foo'} :
+		(${4:true}) ? ${5:'bar'} : ${6:'baz'};
+
+snippet switch
+	switch (${1:expression}) {
+		case '${3:case}':
+			${4}
+			break;
+		${0}
+		default:
+			${2}
+	}
+
+snippet case
+	case '${1:case}':
+		${2}
+		break;
+	${0}
+
+snippet try
+	try {
+		${1}
+	} catch (${2:e}) {
+		${0:/* handle error */}
+	}
+
+###################
+# Iterators
+###################
+snippet for
+	for (var ${2:i} = 0, l = ${1:arr}.length; $2 < l; $2 ++) {
+		var ${3:v} = $1[$2];${0:}
+	}
+
+snippet while
+	while (${1:/* condition */}) {
+		${0}
+	}
+
+snippet do
+	do {
+		${0}
+	} while (${1:/* condition */});
+
+snippet forin
+	for (var ${1:prop} in ${2:Things}) {
+		${0:$2[$1]}
+	}
+
+snippet foreach
+	${1}.forEach(function(${2}) {
+		${0}
+	});
+
+
+###################
+# Functions
+###################
+snippet fn
+	function (${1:argument}) {
+		${0}
+	}
+
+snippet :fn
+	${1:method_name}: function (${2:params}) {
+		${0}
+	}${3:,}
+
+snippet closure
+	(function(${1}) {
+		${0}
+	})
+
+###################
+# nodejs
+###################
+snippet require
+	const ${1} = require('${2}');
+
+snippet exports
+	module.exports = function(${1}) {
+		${0}
+	};
+
+snippet exit
+	process.exit($1);
+	${0}
+
+###################
+# Etc
+###################
+snippet timeout
+	setTimeout(function () {${0}}, ${1:1000});
+
+snippet log
+	console.log(${1});
+	${0}
+
+snippet warn
+	console.warn(${1});
+	${0}
+
+snippet jp
+	JSON.parse(${1:jstr})
+	${0}
+
+snippet js
+	JSON.stringify(${1:object}, null, ' ')${2}
+	${0}
+
+snippet keys
+	Object.keys(${1})
+	${0}
+
+snippet foreachkey
+	Object.keys(${1}).forEach(function(key) {
+		${2}
+	});
+	${0}
