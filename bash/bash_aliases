@@ -51,6 +51,9 @@ alias vu='vagrant up'
 # ad-hoc webserver
 alias ws='python -m SimpleHTTPServer'
 
+# recursively run php linter accross all files in cwd
+alias phplint="find . -type f -name '*.php' -exec php -l {} \; | grep -v '^No syntax'"
+
 # exports
 # NB: I know it's "wrong" to put this here instead of in .bashrc, but it's more
 # convient to manage one file instead of two.
