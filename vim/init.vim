@@ -27,7 +27,7 @@ highlight CursorLine ctermbg  = 0
 
 " ----- vars -----
 let mapleader                 = ","
-let NERDTreeIgnore            = [ 'node_modules' ]
+let NERDTreeIgnore            = [ 'node_modules', 'vendor' ]
 
 set bg=dark
 :colorscheme solarized
