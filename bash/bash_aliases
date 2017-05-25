@@ -1,6 +1,5 @@
 # misc
 alias cb='xclip -selection clipboard'
-alias dots='cd ~/src/dotfiles; nvim; cd -'
 alias f='fg'
 alias je='nvim -c "set syntax=json" -'
 alias l='ls'
@@ -9,8 +8,8 @@ alias ll='ls -Al'
 alias ls='ls --group-directories-first --color=auto'
 alias q='exit'
 alias ra='source ~/.bash_aliases'
-alias v=nvim
-alias vim=nvim
+alias v='TERM="" nvim'
+alias vim='TERM="" nvim'
 alias wireless='nmtui'
 alias z='cd'
 
