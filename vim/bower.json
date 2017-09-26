@@ -19,11 +19,13 @@
     "lightline"            : "itchyny/lightline.vim",
     "nerdcommenter"        : "scrooloose/nerdcommenter",
     "nerdtree"             : "scrooloose/nerdtree",
+    "rust-vim"             : "rust-lang/rust.vim",
     "snipmate"             : "garbas/vim-snipmate",
     "tabular"              : "godlygeek/tabular",
     "tlib_vim"             : "tomtom/tlib_vim",
     "vim-addon-mw-utils"   : "MarcWeber/vim-addon-mw-utils",
     "vim-colors-solarized" : "altercation/vim-colors-solarized",
-    "vim-surround"         : "tpope/vim-surround"
+    "vim-surround"         : "tpope/vim-surround",
+    "vim-toml"             : "cespare/vim-toml"
   }
 }
