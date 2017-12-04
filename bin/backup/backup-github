@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# load functions
+SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SRCDIR/util"
+
+# constrain to fourside
+constrain_host "fourside"
+
+# assert that the drives are properly mounted
+verify_drive $STORAGE_PATH storage
+
+# back up Github projects to media drive
+echo "Backing up Github repositories...";
+glb discover $GITHUB_API_TOKEN | glb download "$STORAGE_PATH/src/github-backup"
+
+# done
+echo "Complete!";

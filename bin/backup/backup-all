@@ -1,0 +1,24 @@
+#!/bin/bash
+
+SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SRCDIR/util"
+
+# back up github repositories to `/media/storage`
+if [ -f "$STORAGE_PATH/storage" ]; then
+  source "$SRCDIR/backup-github"
+fi
+
+# back up `~/vault` to `/media/backup/vault`
+if [ -f "$BACKUP_VAULT/backup-vault" ]; then
+  source "$SRCDIR/backup-vault"
+fi
+
+# back up `~` and `/media/storage` to `/media/backup/internal`
+if [ -f "$STORAGE_PATH/storage" ] && [ -f "$BACKUP_PATH_INTERNAL/backup-internal" ]; then
+  source "$SRCDIR/backup-to-internal"
+fi
+
+# back up `/media/backup/internal` to `/media/backup/external`
+if [ -f "$BACKUP_PATH_INTERNAL/backup-internal" ] && [ -f "$BACKUP_PATH_EXTERNAL/backup-external" ]; then
+  source "$SRCDIR/backup-to-external"
+fi

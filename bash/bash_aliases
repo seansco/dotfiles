@@ -70,5 +70,11 @@ export DEFAULT_CHEAT_DIR=~/src/dotfiles/cheat
 # set the GOPATH
 export GOPATH=$HOME/src/go
 
+# set backup directories
+export STORAGE_PATH="/media/storage"
+export BACKUP_PATH_INTERNAL="/media/backup/internal"
+export BACKUP_PATH_EXTERNAL="/media/backup/external"
+export BACKUP_PATH_VAULT="/media/backup/vault"
+
 # configure glb
-export GITHUB_API_TOKEN=`cat ~/vault/github/api-token`
+export GITHUB_API_TOKEN=`cat ~/vault/envvars/github-api-token`

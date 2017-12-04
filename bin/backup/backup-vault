@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# vars
+HOST=`hostname`
+
+# load functions
+SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SRCDIR/util"
+
+# disable this script on hosts other than fourside
+constrain_host "fourside"
+
+# assert that the drives are properly mounted
+verify_drive $BACKUP_PATH_VAULT backup-vault
+
+# back up vault
+echo "Backing up vault...";
+rsync -avW --delete ~/vault/* "$BACKUP_PATH_VAULT"
+
+# done
+echo "Complete!";

@@ -1,0 +1,26 @@
+# vim: set ft=sh:
+
+
+# assert that the drive is properly mounted
+# $1 = drive mount path
+# $2 = confirmation file
+verify_drive () {
+  if [ ! -d "$1" ]; then
+    >&2 echo "$1 is not mounted.";
+    exit 1
+  fi
+  if [ ! -f "$1/$2" ]; then
+    >&2 echo "Incorrect drive mounted at $1.";
+    exit 1
+  fi
+}
+
+
+# disable this script on hosts other than fourside
+# $1 = permitted host
+constrain_host() {
+  if [ `hostname` != "$1" ]; then
+    echo "This command is disabled on $1."
+    exit 1
+  fi
+}

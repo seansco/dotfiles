@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# vars
+HOST=`hostname`
+
+# load functions
+SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SRCDIR/util"
+
+# disable this script on hosts other than fourside
+constrain_host "fourside"
+
+# assert that the drives are properly mounted
+verify_drive $STORAGE_PATH         storage
+verify_drive $BACKUP_PATH_INTERNAL backup-internal
+
+# assert that the backup directory exists
+mkdir -p "$BACKUP_PATH_INTERNAL/$HOST"
+
+# back up the home directoroy
+echo "Backing up home directory...";
+rsync -avW --delete ~ "$BACKUP_PATH_INTERNAL/$HOST"
+
+# back up media drive
+echo "Backing up media drive...";
+rsync -avW --delete "$STORAGE_PATH" "$BACKUP_PATH_INTERNAL/$HOST"
+
+# done
+echo "Complete!";
