@@ -14,7 +14,7 @@ set shiftwidth=2      " an indentation every two columns
 set si			         	" smart indent
 set smartcase         " case sensitive when uc present
 set softtabstop=2     " let backspace delete indent
-set tabstop=2         " an indentation every four columns
+set tabstop=2         " an indentation every two columns
 
 filetype plugin indent on
 
@@ -85,6 +85,7 @@ au BufNewFile,BufRead *.ejs    set filetype=html
 au BufNewFile,BufRead *.hogan  set filetype=html
 au BufNewFile,BufRead *.md     set filetype=markdown
 au BufNewFile,BufRead *.vue    set filetype=html
+au BufNewFile,BufRead *.go    set noexpandtab shiftwidth=2 tabstop=2
 
 " apply 4 space indents to certain filetypes
 autocmd FileType php setlocal shiftwidth=4 tabstop=4
