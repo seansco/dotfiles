@@ -20,6 +20,7 @@ alias gof='go fmt'
 alias gol='golint'
 alias got='go test'
 alias gotb='go test -bench=.'
+alias gov='go vet .'
 
 # shotcuts
 alias ......='cd ../../../../..;'
