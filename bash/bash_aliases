@@ -15,11 +15,12 @@ alias z='cd'
 
 # golang
 alias gob='go build'
+alias goc='cd ~/src/go/src/github.com/chrisallenlane'
 alias god='godoc'
 alias gof='go fmt'
 alias gol='golint'
-alias got='go test'
-alias gotb='go test -bench=.'
+alias got='go test ./...'
+alias gotb='go test ./... -bench=.'
 alias gov='go vet .'
 
 # shotcuts
