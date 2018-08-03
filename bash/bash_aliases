@@ -17,8 +17,8 @@ alias z='cd'
 alias gob='go build'
 alias goc='cd ~/src/go/src/github.com/chrisallenlane'
 alias god='godoc'
-alias gof='go fmt'
-alias gol='golint'
+alias gof='go fmt ./...'
+alias gol='golint ./...'
 alias got='go test ./...'
 alias gotb='go test ./... -bench=.'
 alias gov='go vet .'
@@ -31,8 +31,9 @@ alias ...='cd ../..;'
 alias ..='cd ..;'
 alias d='cd ~/desktop'
 alias o='cd ~/downloads'
-alias r='cd ~/src/revo'
+alias r='cd ~/src/client/revo'
 alias s='cd ~/src'
+alias t='cd /tmp'
 
 # git
 alias ga='git add'
@@ -55,6 +56,7 @@ alias gs='git status'
 # vagrant
 alias vh='vagrant halt'
 alias vs='vagrant ssh'
+alias vu='vagrant provision'
 alias vu='vagrant up'
 
 # ad-hoc webserver
@@ -79,6 +81,13 @@ export DEFAULT_CHEAT_DIR=~/src/dotfiles/cheat
 
 # set the GOPATH
 export GOPATH=$HOME/src/go
+
+# add ~/.nimble/bin to PATH
+export PATH=$PATH:~/.nimble/bin
+
+# add ~/.composer/vendor/bin to PATH
+export PATH=$PATH:~/.composer/vendor/bin
+
 
 # set backup directories
 export STORAGE_PATH="/media/storage"
